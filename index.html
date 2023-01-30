@@ -11,9 +11,11 @@
   <div class="flex-container">
     <div class="img-container">
       <img class="main-img" src="image/main-image.jpg" alt="This is the main image of the Sign-Up Form">
+      <p class="credit">Photo by: Tabakoff photography</p>
     </div>
     <div class="logo-container">
-      <img class="logo-img" src="image/logo-image.png" alt="Logo of the Sign-Up Form">
+      <img class="logo-img" src="image/logo-image.jpg" alt="Logo of the Sign-Up Form"><span class="logo-text">Bulgaria
+    </span>
     </div>
   </div>
   <div class="another-flex-container">
@@ -23,49 +25,55 @@
         This is not a real online service! You know you need 
         something like this in your life to help you realize your deepest dreams.
       </p>
-      <p class="second-row">Sign up now to get started</p>
-      <p class="third-row">You know you want to.</p>
+      <p class="first-row">Sign up now to get started</p>
+      <p class="first-row third-row">You <em>know</em> you want to.</p>
     </div>
   </div>
   <div class="user-info-container">
-    <p class="text-quote">Let's do this</p>
+    <p class="text-quote">Let's do this!</p>
+    <form action="#" method="get">
     <div class="user-information">
       <div class="user-info-column-one">
-      <label for="first-name">First Name</label>
-    <input type="text" name="first_name" id="first-name">
+      <label for="first-name">First Name*</label>
+    <input type="text" name="first-name" id="first-name" minlength="6" maxlength="20" placeholder="John" 
+    pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" required>
     </div>
     <div class="user-info-column-two">
-      <label for="email">Email</label>
-      <input type="email" name="email" id="email">
+      <label for="email">Email*</label>
+      <input type="email" name="email" id="email" minlength="7" maxlength="30" placeholder="name@gmail.com" required>
     </div>
   </div>
   <div class="user-information">
     <div class="user-info-column-one">
-    <label for="password">Password</label>
-    <input type="password" name="password" id="password">
-  </div>
+    <label for="password">Password*</label>
+    <input type="password" name="password" id="password" minlength="8" maxlength="25" placeholder="Min-length 8, UpperCase, Special Symbol"
+     pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$)" required>
+  </div>  
   <div class="user-info-column-two">
-    <label for="last-name">Last Name</label>
-    <input type="text" name="last-name" id="last-name">
+    <label for="last-name">Last Name*</label>
+    <input type="text" name="last-name" id="last-name" minlength="6" maxlength="20" placeholder="Doe" 
+    pattern="^[a-zA-Z][a-zA-Z0-9-_\.]{1,20}$" required>
   </div>
   </div>
   <div class="user-information">
     <div class="user-info-column-one">
     <label for="phone-number">Phone Number</label>
-    <input type="tel" name="phone-number" id="phone-number">
+    <input type="tel" name="phone-number" id="phone-number" pattern="[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}">
   </div>
   <div class="user-info-column-two">
-    <label for="confirm-password">Confirm Password</label>
-    <input type="password" name="confirm-password" id="confirm-password">
+    <label for="confirm-password">Confirm Password*</label>
+    <input type="password" name="confirm-password" id="confirm-password" minlength="8" maxlength="25"  
+    pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$)" required>
   </div>
+</form>
     </div>
   </div>
   <div class="create-account-section">
-    <input type="submit" value="Create Account">
-    <p class="login-user">Already have an account? <span>Log in</span></p>
+    <input class="create-btn" type="submit" value="Create Account">
+    <p class="login-user">Already have an account?
+      <a href="https://github.com/Preslav977/sign-up-form" target="_blank">Log in</a>
+    </p>
   </div>
-  <footer class="footer-section">
-  </footer>
     </div>
 </body>
 </html>

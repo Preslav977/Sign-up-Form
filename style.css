@@ -1,7 +1,6 @@
-@font-face {
-  font-family: Norse-Bold, "Arial", "sans-serif";
-  src: url(font/Norse-Bold.otf);
-}
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&family=Oswald:wght@500&display=swap');
+
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -48,7 +47,6 @@ table {
 	border-spacing: 0;
 }
 
-
 .flex-container {
   display: flex;
 }
@@ -59,7 +57,7 @@ table {
 
 .img-container, .main-img {
   width: 600px;
-  height: 712px;
+  height: 717px;
   line-height: 0;
 }
 
@@ -68,19 +66,36 @@ table {
 }
 
 .logo-img {
-  width: 100px;
+  width: 150px;
+}
+
+.logo-text {
+  margin-left: 10px;
+  color: white;
+  font-size: 40px;
+  font-family: Oswald, "Arial", "sans-serif";
+}
+
+.credit {
+  position: absolute;
+  bottom: 0.6em;
+  left: 150px;
+  right: 0;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .logo-container {
   background-color: black;
   position: absolute;
-  top: 10em;
+  top: 4em;
   display: flex;
   justify-content: center;
   align-items: center;
   width: 600px;
   opacity: 0.5;
-  height: 150px;
+  height: 130px;
 }
 
 .header-content {
@@ -88,6 +103,7 @@ table {
   padding-top: 110px;
   /* border: 2px solid blue; */
   height: 200px;
+  background-color: white;
 }
 
 .header-first-row {
@@ -95,12 +111,13 @@ table {
   line-height: 17px;
 }
 
-.header-content > .third-row {
+.third-row {
   margin-top: 12px;
 }
 
 .user-info-container {
-  border: 2px solid green;
+  background-color: green;
+  color: white;
 }
 
 .user-information {
@@ -108,13 +125,18 @@ table {
 }
 
 input {
-  width: 180px;
+  width: 200px;
+  border-radius: 4px;
+  margin-top: 2px;
 }
 
 .text-quote {
   padding-left: 30px;
   padding-top: 10px;
   padding-bottom: 15px;
+  font-size: 18px;
+  font-family: Open Sans, "Arial", "sans-serif";
+  font-weight: 400;
 }
 
 .user-info-column-one {
@@ -131,12 +153,54 @@ input {
 }
 
 .create-account-section {
-  border: 2px solid blue;
-  height: 186px;
+  height: 190px;
   padding-left: 30px;
   padding-top: 20px;
+  background-color: red;
 }
 
 .login-user {
   padding-top: 30px;
 }
+
+.first-row {
+  line-height: 20px;
+  font-family: Open Sans, "Arial", "sans-serif";
+  font-size: 17px;
+}
+
+.create-btn {
+  border: 3px solid black;
+  padding: 12px;
+  border-radius: 6px;
+  background-color: whitesmoke;
+}
+
+.login-user {
+  color: white;
+  font-weight: 700;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: white;
+}
+
+.create-btn:hover {
+  cursor: pointer;
+}
+
+input:focus {
+  border-color: black;
+}
+
+input:invalid {
+  border-color: red;
+}
+
+/* input:valid {
+  border-color: green;
+} */
